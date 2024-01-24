@@ -7,12 +7,12 @@ dob_task.py.
 provided (DOB.txt) and prints it out in two different sections in the format
 displayed below:
 
-#### **Name**
+### Name
 #### Orville Wright
 #### Rogelio Holloway
 #### Marjorie Figueroa
 #### … etc.
 
-#### **Birthdate**
+### Birthdate
 #### 21 July 1988
 #### 13 September 1988
