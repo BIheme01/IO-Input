@@ -16,9 +16,9 @@ End
 name = []
 dob = []
 
-file = open("io-input/dob.txt", "r+")
+dob_file = open("io-input/dob.txt", "r+")
 print('\33[1m'"Name"'\33[0m')
-for line in file:
+for line in dob_file:
     words = line.split()             # Split words in each line
     first_two_words = words[:2]      # Take first 2 words(names)
     #Turn list of names to string 
@@ -28,16 +28,16 @@ for line in file:
 
 print("")
 # Reset the read position to the beginning of the file
-file.seek(0)
+dob_file.seek(0)
 print('\33[1m'"Birthdate"'\33[0m')
-for line in file:
+for line in dob_file:
     words = line.split()                # Split words in each line
     birth_date = words[2:5]             # Take last 3 characters
     birth_date = (" ").join(birth_date)          
     print(birth_date)                   # Print DOB
     dob.extend(birth_date)              # Add DOB to container
                 
-file.close()
+dob_file.close()
 
                 
 
